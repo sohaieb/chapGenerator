@@ -46,7 +46,7 @@ ChapGenerator is a python script that helps to include chapters into your MP4 vi
 chapter which would be read by a video players supporting video chapters feature like: [MPC-HC](https://mpc-hc.org)
 or [VLC](https://www.videolan.org/vlc/).
 
-![Example of Generated chapters](.\imgs\Screenshot_3.jpg)
+<img src="imgs\Screenshot_3.jpg"/>
 
 ### Built With
 
