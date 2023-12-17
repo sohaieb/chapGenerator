@@ -1,0 +1,9 @@
+00:00:00 Leaving the cave
+00:00:02 The rabbit yawns
+00:00:12 The rabbit smiles
+00:00:20 Smelling the scent of roses
+00:00:29 Butterfly flying
+00:00:36 The apple falls
+00:00:46 Eating the apple
+00:01:03 Running towards the Butterfly
+00:01:06 END

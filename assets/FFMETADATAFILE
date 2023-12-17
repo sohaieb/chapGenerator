@@ -1,0 +1,53 @@
+;FFMETADATA1
+major_brand=isom
+minor_version=512
+compatible_brands=isomiso2avc1mp41
+encoder=Lavf60.18.100
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=1999
+title=Leaving the cave
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2000
+END=11999
+title=The rabbit yawns
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=12000
+END=19999
+title=The rabbit smiles
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=20000
+END=28999
+title=Smelling the scent of roses
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=29000
+END=35999
+title=Butterfly flying
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=36000
+END=45999
+title=The apple falls
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=46000
+END=62999
+title=Eating the apple
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=63000
+END=65999
+title=Running towards the Butterfly
