@@ -2,7 +2,6 @@ from os import system, path
 from helpers.local_paths import ressources_path, output_path
 import config
 
-
 class FFmpeg:
     @staticmethod
     def extract_meta(video_name=f'{path.join(ressources_path, config.input_file_path)}',
@@ -15,3 +14,9 @@ class FFmpeg:
                       meta_output=f'{path.join(ressources_path, config.video_metadata_file_name)}'):
         system(
             f'{config.ffmpeg_exec_path} -i {video_name_input} -i {meta_output} -map_metadata 1 -codec copy {video_name_output}')
+
+    @staticmethod
+    def split_video_by(chapter_file_name, start, stop,
+                       video_name_input=f'{path.join(ressources_path, config.input_file_path)}'):
+        system(
+            f'{config.ffmpeg_exec_path} -i {video_name_input} -ss {start} -t {stop} -async 1 {path.join(output_path, chapter_file_name)}')

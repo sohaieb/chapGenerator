@@ -1,7 +1,19 @@
-from helpers.Generator import Generator
-from helpers.ffmpeg import FFmpeg
+from helpers.generator import Generator
+from helpers.splitter import Splitter
+import argparse
 
-g = Generator()
-FFmpeg.extract_meta()
-g.generate()
-FFmpeg.rebuild_video()
+parser = argparse.ArgumentParser(description='Generate Chapters or Split video by chapters',
+                                 prog='python chapGenerator.py', epilog='Developed by: Sohaieb Azaiez')
+parser.add_argument('-m', '--mode', dest='mode', action='store', default='generate', metavar='generate',
+                    help='set split/generate mode (default: generate)')
+
+args = parser.parse_args()
+
+match args.mode:
+    case 'generate':
+        g = Generator()
+        g.generate()
+
+    case 'split':
+        sp = Splitter()
+        sp.split()
